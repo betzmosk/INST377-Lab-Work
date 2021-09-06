@@ -1,40 +1,150 @@
-YOUR NAME Lab 2: Intro to HTML
+<!--
+<!DOCTYPE html>
+    <html>
+        <head>
+            <title>Lab 2 Betzalel Moskowitz</title>
+            <link rel="stylesheet" href="styles.css">
+        </head>
+        <body>
+            <div class="title wrapper">
+                <h1 class="subtitle">Betzalel Moskowitz Lab 2: CSS Selectors</h1>
+            </div>
+        <nav>
+            <a href="selectors.html">Selectors</a>
+            <a href="/">Main Page</a>
+        </nav>
+        
+        <div class="wrapper">
+            <h2>First, the basics.</h2>
+            <p>You need the following to build your website.</p>
+        </div>
+        <div class="section_1 wrapper default">
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+                <li>And other web development frameworks</li>
+            </ul>
+            <div>
+                <p>You should list your top 3 goals for the class below.</p>
+                <ol>
+                    <li>Learn front-end web design</li>
+                    <li>Learn new programming languages</li>
+                    <li>Learn how to work with others in a technical space</li>
+                    <li>Learn popular web dev frameworks</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section_2 wrapper default">
+            <h2 class="subtitle">Let's Try Some Inline Elements</h2>
 
-Selectors
-Main Page
+            <p>Sometimes you want to draw attention to <em>something</em> in a line of text.</p>
 
-First, the basics.
+            <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
 
-You need the following to build your website.
+            <p>Sometimes you want to <strong><em>do both.</em></strong></p>
+        </div>
+        <div class="wrapper section_3">
+            <h3>Empty Elements</h3>
 
-HTML and CSS
-Javascript
-Node.js
-And other web development frameworks
+            <p>Soft line breaks can't wrap anything.</p>
+            <p>Neither can image tags, or hard lines.</p>
+            <p>Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.</p>
+        </div>
+        <hr/>
+        <div class="section_4 wrapper">
+            <div class="left">
+                <h2 class="subtitle">Images</h2>
+                <p class=text>Don't forget to use alt text on your images. It's important for accessibility.</p>
+            </div>
+            <div class="right">
 
-You should list your top 3 goals for the class below.
+            </div>
+        </div> 
+        Include a hyperlink here to your github repository for class.
+        If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+        </body>
+    </html>
+-->
 
-Learn front-end web design
-Learn new programming languages
-Learn how to work with others in a technical space
-Learn popular web dev frameworks
+<!DOCTYPE html>
+<html lang='en'>
+    <head>
+        <title>Lab 2 Betzalel Moskowitz</title>
+        <meta charset='UTF-8'/>
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <body>
+        <div class="wrapper">
+            <div class="title">
+                <h1 class="subtitle">Betzalel Moskowitz Lab 2: CSS Selectors</h1>
+            </div>
+            <div>
+                <nav>
+                    <a href="selectors.html">Selectors</a>
+                    <a href="index.html">Main Page</a>
+                </nav>
+            </div>
+        </div>
+        <div class="wrapper default">
+            <h2 class="subtitle">First, the basics.</h2>
+            <p>You need the following to build your website.</p>
+        </div>
+        <div class="section_1 wrapper default">
+            <ul>
+                <li>HTML and CSS</li>
+                <li>Javascript</li>
+                <li>Node.js</li>
+            </ul>
+            <div>
+                <p>My top 5 favorite albums are:</p>
+                <ol>
+                    <li>Death of a Bachelor - Panic! At the Disco</li>
+                    <li>Ember - Rak Shalom</li>
+                    <li>Life Changes - Thomas Rhett</li>
+                    <li>Tullahoma - Dustin Lynch</li>
+                    <li>True - Avicii</li>
+                </ol>
+            </div>
+        </div>
+        <div class="section_2 wrapper default">
+            <h2 class="subtitle">Let's Try Some Inline Elements</h2>
 
-Let's Try Some Inline Elements
+            <p>Sometimes you want to draw attention to <em>something</em> in a line of text.</p>
 
-Sometimes you want to draw attention to something in a line of text.
+            <p>Sometimes you want to <strong>strongly emphasize something</strong> in the text.</p>
 
-Sometimes you want to strongly emphasize something in the text.
-
-Sometimes you want to do both.
-
-Empty Elements
-
-Soft line breaks can't wrap anything. Neither can image tags, or hard lines.
-Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.
-
-Images 
-
-Don't forget to use alt text on your images. It's important for accessibility.
-
-Include a hyperlink here to your github repository for class.
-If you want your repo to be private, be sure to invite Prof A as a "collaborator."
+            <p>Sometimes you want to <strong><em>do both.</em></strong></p>
+        </div>
+        <div class="section_3 wrapper">
+            <h3 class="subtitle">Empty Elements</h3>
+            <p>Soft line breaks can't wrap anything. Neither can image tags, or hard lines.</p>
+            <p>Add a hard line under here, and make sure you've used some soft line breaks to match your page to the sample.</p>
+        </div>
+        <hr class="default"/>
+        <div class="section_4 wrapper">
+            <div class="left">
+                <h2 class="subtitle">Images</h2> 
+                <div class="text">
+                    <p>Include the four images in the /images folder below</p>
+                    <p>Don't forget to use alt text on your images. It's important for accessibility.</p>
+                </div>
+            </div>
+            <div class="right">
+                <div class="carousel">
+                    <div class="slides">
+                        <img src="images/mochi.jpg" alt="mochi image"></img>
+                        <img src="images/mochi.png" alt="mochi image"></img>
+                        <img src="images/mochi.svg" alt="mochi image"></img>
+                        <img src="images/mochi.gif" alt="mochi animated image"></img>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <br/>
+        <div class="wrapper">
+            <a href="https://github.com/betzmosk/INST377-Lab-Work">Include a hyperlink here to your github repository for class.</a>
+            <p>If you want your repo to be private, be sure to invite Prof A as a "collaborator."</p>
+        </div>
+    </body>
+</html>
