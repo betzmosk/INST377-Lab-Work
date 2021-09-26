@@ -1,0 +1,163 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+
+  .wrapper {
+    font-family: ‘Segoe UI’, Candara, ‘Bitstream Vera Sans’, ‘DejaVu Sans’, ‘Bitsream Vera Sans’, ‘Trebuchet MS’, Verdana, ‘Verdana Ref’, sans-serif;
+  }
+
+  .title{
+    display: inline-block;
+    background-color: rgba(0,139, 139,0.8);
+    padding: 10px 15px;
+    margin: 0;
+    display: flex;
+  }
+  
+  .menu-container {
+    color: #fff;
+    background-color: #5995DA;  /* Blue */
+    padding: 20px 0;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .menu {
+    border: 1px solid #fff;  /* For debugging */
+    width: 900px;
+    display: flex;
+    justify-content: space-between;
+  }
+
+  .login {
+      margin-left: 20px;
+  }
+
+  .signup {
+      margin-left: auto;
+  }
+
+  .links {
+    border: 1px solid #fff;  
+    display: flex;
+    justify-content: flex-end;
+  }
+
+  .header-container {
+    color: #5995DA;
+    background-color: #D6E9FE;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .header {
+    width: 900px;
+    height: 300px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+
+  .carousel {
+    overflow: hidden;
+    max-width: auto;
+    position: relative;
+    display: flex;
+    justify-content: center;
+  }
+  
+  .carousel .carousel-item,
+  .carousel .carousel-item-hidden {
+    display: none;
+  }
+  
+  .carousel .carousel-item img {
+    width: 100%;
+    max-width: 600px;
+    height: auto;
+  }
+  
+  .carousel .carousel-item-visible {
+    display: block;
+    animation: fadeVisibility 0.5s;
+  }
+  
+  .carousel .carousel-actions {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    position: absolute;
+    top: 50%;
+  }
+  
+  .carousel .carousel-actions button {
+    border-radius: 10px;
+    border: 0;
+    font-weight: bold;
+    cursor: pointer;
+    width: auto;
+    height: auto;
+    padding: 5px 10px 5px 10px;
+    border: 2px solid transparent;
+  }
+  .carousel .carousel-actions button:focus {
+    background-color: orange;
+  }
+  
+  .carousel .carousel-actions button#carousel-button-prev {
+    margin-left: 430px;
+  }
+  
+  .carousel .carousel-actions button#carousel-button-next {
+    margin-right: 430px;
+  }
+  
+  @keyframes fadeVisibility {
+    0% {
+      opacity: 0;
+    }
+    100% {
+      opacity: 1;
+      transform: opacity linear;
+    }
+  }
+  .social,
+  .subscribe {
+    align-self: flex-end;
+    margin-bottom: 20px;
+  }
+
+  .footer {
+    display: flex;
+    justify-content: space-between;
+  }
+  
+  .footer-item {
+    border: 1px solid #fff;
+    background-color: #D6E9FE;
+    height: 200px;
+    flex: 1;
+  }
+
+  .footer-three {
+    flex: 2;
+  }
+
+  .footer-one,
+  .footer-three {
+    background-color: #5995DA;
+    flex: initial;
+    width: 300px;
+  }
+  
+  .github {
+      text-decoration: none;
+      color: #5995DA;
+  }
+
+  .links a {
+      color: #fff;
+      text-decoration: none;
+  }
